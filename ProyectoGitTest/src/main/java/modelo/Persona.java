@@ -4,11 +4,13 @@ public class Persona {
 	
 	private String nombre;
 	private String apellido;
+	private int dni;
 	
-	public Persona(String nombre, String apellido) {
+	public Persona(String nombre, String apellido, int dni) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.dni = dni;
 	}
 	public String getNombre() {
 		return nombre;
@@ -22,9 +24,16 @@ public class Persona {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	public int getDni() {
+		return dni;
+	}
+	public void setDni(int dni) {
+		this.dni = dni;
+	}
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", apellido=" + apellido + "]";
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + "]";
 	}
+	
 	
 }
